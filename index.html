@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Crosstown</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { height: 100%; overflow: hidden; font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif; }
+      body { background: #f4f1ea; touch-action: none; -webkit-user-select: none; user-select: none; }
+      #game-canvas { display: block; position: absolute; inset: 0; }
+      #ui-root { position: absolute; inset: 0; pointer-events: none; }
+      #ui-root > * { pointer-events: auto; }
+    </style>
+  </head>
+  <body>
+    <canvas id="game-canvas"></canvas>
+    <div id="ui-root"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
